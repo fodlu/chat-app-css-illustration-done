@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+}
+
+.wallpaper {
+  height: 600px;
+  width: 600px;
+  background-color: hsl(276, 55%, 52%);
+  position: absolute;
+  top: -20px;
+  left: -100px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: -1;
+}
+
+.wallpaper2 {
+  height: 600px;
+  width: 600px;
+  background-color: hsl(276, 28%, 95%);
+  position: absolute;
+  bottom: -20px;
+  right: -100px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  z-index: -2;
+}
+
+.container {
+  margin: 60px;
+}
+
+.container .hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .hero .phone {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  padding: 10px;
+  width: 250px;
+  height: 500px;
+}
+
+.container .hero .phone .up_phone {
+  background: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  /* padding: 5px; */
+}
+
+.container .hero .phone .up_phone .speaker {
+  background-color: white;
+  position: relative;
+  top: -30px;
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.container .hero .phone .up_phone .receiver .back {
+  color: hsl(271, 36%, 24%);
+  font-weight: bolder;
+  margin: 5px;
+}
+
+.container .hero .phone .up_phone .receiver {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.container .hero .phone .up_phone .receiver .receiver_details {
+  display: flex;
+}
+
+.container .hero .phone .up_phone .receiver .receiver_details .dp img {
+  width: 35px;
+  border-radius: 50%;
+  border: 3px solid hsl(270, 20%, 96%);
+}
+
+.container .hero .phone .up_phone .receiver .receiver_details .receiver_name {
+  margin: 0 5px;
+  color: white;
+}
+
+.container
+  .hero
+  .phone
+  .up_phone
+  .receiver
+  .receiver_details
+  .receiver_name
+  h3 {
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(271, 36%, 24%);
+}
+
+.container .hero .phone .up_phone .receiver .receiver_details .receiver_name p {
+  font-size: 7px;
+  color: hsl(276, 100%, 81%);
+}
+
+.container .hero .phone .chatBG {
+  background-color: hsl(270, 20%, 96%);
+  padding: 5px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.container .hero .phone .chatBG .chat {
+  font-size: 9px;
+  width: 100%;
+}
+
+.container .hero .phone .chatBG .in {
+  border-radius: 10px;
+  width: 70%;
+  border-bottom-left-radius: 0;
+  padding: 5px 10px;
+  margin: 3px 0;
+  background-color: hsl(276, 55%, 70%);
+}
+
+.container .hero .phone .chatBG .out {
+  border-radius: 10px;
+  width: 70%;
+  border-bottom-right-radius: 0;
+  padding: 10px;
+  margin: 3px 0;
+  margin-left: auto;
+  background-color: hsl(271, 15%, 80%);
+}
+
+.container .hero .phone .chatBG .out img {
+  width: 30px;
+  margin: 0 3px;
+  border-radius: 10px;
+}
+
+.container .hero .text {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.container .hero .text h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: hsl(271, 36%, 24%);
+}
+
+.container .hero .text p {
+  font-size: 15px;
+  color: hsl(270, 7%, 64%);
+}
+
+.container .hero .phone .chatBG .type {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container .hero .phone .chatBG .type .input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+}
+
+.container .hero .phone .chatBG .type .input::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
+.container .hero .phone .chatBG .type .send {
+  background-color: hsl(271, 36%, 24%);
+  width: 25px;
+  position: relative;
+  left: -20px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.attribution {
+  display: block;
+}
+
+@media only screen and (max-width: 375px) {
+  .wallpaper {
+    top: -90px;
+    left: -400px;
+  }
+
+  .wallpaper2 {
+    bottom: -150px;
+    right: -400px;
+  }
+
+  .container .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .hero .text {
+    text-align: center;
+    padding: 50px;
+  }
+}
